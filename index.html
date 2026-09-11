@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025-2026学年第二学期期末学习总结</title>
+    <style>
+        /* ========== 全局重置 ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* ========== 头部 header ========== */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            text-align: center;
+            padding: 48px 20px 36px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            letter-spacing: 6px;
+        }
+
+        /* ========== 导航 nav ========== */
+        nav {
+            background: #fff;
+            padding: 0 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 14px 28px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s, background 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav a:hover {
+            color: #3498db;
+            background: #f0f4f8;
+            border-bottom-color: #3498db;
+        }
+
+        /* ========== 主体布局 ========== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========== main ========== */
+        main {
+            background: #fff;
+            border-radius: 12px;
+            padding: 36px 32px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        main h2 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
+            padding-left: 16px;
+            margin: 36px 0 18px;
+        }
+
+        main h2:first-of-type {
+            margin-top: 0;
+        }
+
+        main h3 {
+            font-size: 1.15rem;
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+
+        main p {
+            margin-bottom: 14px;
+            text-indent: 2em;
+        }
+
+        main ul {
+            margin: 10px 0 14px 2em;
+            list-style: none;
+        }
+
+        main ul li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        main ul li::before {
+            content: "●";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 0.85rem;
+        }
+
+        /* ========== section ========== */
+        section {
+            margin-bottom: 10px;
+        }
+
+        /* ========== 图片样式 ========== */
+        figure {
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        figure img:hover {
+            transform: scale(1.01);
+        }
+
+        figure figcaption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* ========== 表格 ========== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        table thead {
+            background: #2c3e50;
+            color: #fff;
+        }
+
+        table th,
+        table td {
+            padding: 12px 16px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table tbody tr:nth-child(even) {
+            background: #f5f8fc;
+        }
+
+        table tbody tr:hover {
+            background: #e8f0fe;
+        }
+
+        table tfoot {
+            background: #f0f4f8;
+            font-weight: 600;
+        }
+
+        /* ========== 链接 ========== */
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+
+        .external-link::after {
+            content: " ↗";
+            font-size: 0.8rem;
+        }
+
+        /* ========== aside ========== */
+        aside {
+            background: #fff;
+            border-radius: 12px;
+            padding: 28px 24px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            align-self: start;
+        }
+
+        aside h3 {
+            font-size: 1.15rem;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        aside ul li:last-child {
+            border-bottom: none;
+        }
+
+        aside ul li a {
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .aside-quote {
+            margin-top: 20px;
+            padding: 16px;
+            background: #f0f7ff;
+            border-radius: 8px;
+            font-style: italic;
+            color: #555;
+            font-size: 0.9rem;
+            text-indent: 0;
+        }
+
+        /* ========== footer ========== */
+        footer {
+            background: #2c3e50;
+            color: rgba(255, 255, 255, 0.85);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+            line-height: 2;
+        }
+
+        footer .footer-line {
+            margin: 4px 0;
+        }
+
+        footer .highlight {
+            color: #f1c40f;
+            font-weight: 600;
+        }
+
+        /* ========== 返回顶部 ========== */
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #3498db;
+            color: #fff;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        #back-to-top:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== header：页眉 ==================== -->
+    <header>
+        <h1>2025-2026 学年第二学期期末学习总结</h1>
+        <p>勤学善思 · 总结复盘 · 稳步成长</p>
+    </header>
+
+    <!-- ==================== nav：导航栏 ==================== -->
+    <nav>
+        <a href="#overview">学期概况</a>
+        <a href="#scores">成绩统计</a>
+        <a href="#reflection">总结反思</a>
+        <a href="#plan">提升计划</a>
+        <a href="#footer-info">个人信息</a>
+        <a href="https://www.cnblogs.com/" target="_blank" class="external-link">学习资源</a>
+    </nav>
+
+    <!-- ==================== 主体容器 ==================== -->
+    <div class="container">
+
+        <!-- ========== main：主要内容 ========== -->
+        <main>
+
+            <!-- ====== 一、学期整体概况 ====== -->
+            <section id="overview">
+                <h2>一、学期整体概况</h2>
+                <p>
+                    时光荏苒，本学期学习生活已圆满结束。在整个学期中，我严格遵守学校规章制度，
+                    端正学习态度，合理规划学习时间，积极参与课堂互动与课后实践活动。相较于上一学期，
+                    我的自主学习能力、问题探究能力均有明显提升，同时也清晰认识到自身存在的学习短板。
+                </p>
+                <p>
+                    本学期课程内容难度有所提升，涵盖文科积累与理科逻辑运算，我始终保持踏实认真的学习状态，
+                    循序渐进攻克学习难点，整体学习状态稳定向好。
+                </p>
+
+                <!-- 图片：专注日常学习，积累点滴进步 -->
+                <figure>
+                    <img
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='380' viewBox='0 0 800 380'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232c3e50'/%3E%3Cstop offset='100%25' style='stop-color:%233498db'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='380' fill='url(%23g1)'/%3E%3Ccircle cx='650' cy='80' r='120' fill='rgba(255,255,255,0.04)'/%3E%3Ccircle cx='150' cy='300' r='100' fill='rgba(255,255,255,0.03)'/%3E%3Ctext x='400' y='165' font-family='Microsoft YaHei, sans-serif' font-size='38' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3E📚%3C/text%3E%3Ctext x='400' y='220' font-family='Microsoft YaHei, sans-serif' font-size='28' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3E专注日常学习%3C/text%3E%3Ctext x='400' y='265' font-family='Microsoft YaHei, sans-serif' font-size='20' fill='rgba(255,255,255,0.8)' text-anchor='middle'%3E积累点滴进步%3C/text%3E%3C/svg%3E"
+                        alt="专注日常学习，积累点滴进步"
+                        title="专注日常学习，积累点滴进步"
+                    >
+                    <figcaption>▲ 专注日常学习，积累点滴进步</figcaption>
+                </figure>
+            </section>
+
+            <!-- ====== 二、期末成绩统计 ====== -->
+            <section id="scores">
+                <h2>二、期末成绩统计</h2>
+                <p>
+                    以下为本人本学期核心学科期末成绩汇总，通过数据直观复盘本学期学习成果，
+                    表格合并同类科目统计，简洁清晰、重点突出。
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>科目分类</th>
+                                <th>学科名称</th>
+                                <th>期末成绩</th>
+                                <th>等级评定</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">主科</td>
+                                <td>语文</td>
+                                <td>88</td>
+                                <td>良好</td>
+                            </tr>
+                            <tr>
+                                <td>数学</td>
+                                <td>92</td>
+                                <td>优秀</td>
+                            </tr>
+                            <tr>
+                                <td>英语</td>
+                                <td>90</td>
+                                <td>优秀</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">副科</td>
+                                <td>道法</td>
+                                <td>85</td>
+                                <td>良好</td>
+                            </tr>
+                            <tr>
+                                <td>历史</td>
+                                <td>86</td>
+                                <td>良好</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"><strong>本学期平均成绩</strong></td>
+                                <td><strong>88.2</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <!-- ====== 三、学习总结与反思 ====== -->
+            <section id="reflection">
+                <h2>三、学习总结与反思</h2>
+
+                <article>
+                    <h3>1. 学习收获</h3>
+                    <p>
+                        本学期在各科学习中积累了扎实的基础知识，尤其是数学的逻辑思维、英语的语法积累有较大进步。
+                        课堂上能够紧跟老师授课节奏，课后主动完成作业、整理错题，养成了每日复盘、每周总结的良好学习习惯。
+                        同时积极参与班级学习小组，互帮互助，共同进步。
+                    </p>
+                </article>
+
+                <article>
+                    <h3>2. 存在不足</h3>
+                    <ul>
+                        <li>文科知识点背诵不够扎实，知识点记忆零散，缺乏系统性梳理；</li>
+                        <li>理科难题钻研耐心不足，遇到复杂题型容易畏难；</li>
+                        <li>时间分配不够合理，偶尔出现拖延学习的情况，学习效率仍有提升空间。</li>
+                    </ul>
+                </article>
+
+                <!-- 自定义图片 -->
+                <figure>
+                    <img
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='320' viewBox='0 0 800 320'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%231a5276'/%3E%3Cstop offset='100%25' style='stop-color:%232ecc71'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='320' fill='url(%23g2)'/%3E%3Ccircle cx='200' cy='160' r='130' fill='rgba(255,255,255,0.05)'/%3E%3Ctext x='400' y='120' font-family='Microsoft YaHei, sans-serif' font-size='36' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3E💡 反思 · 总结 · 成长 %3C/text%3E%3Ctext x='400' y='175' font-family='Microsoft YaHei, sans-serif' font-size='18' fill='rgba(255,255,255,0.85)' text-anchor='middle'%3E正视不足 才能更好地出发%3C/text%3E%3Ctext x='400' y='230' font-family='Microsoft YaHei, sans-serif' font-size='15' fill='rgba(255,255,255,0.6)' text-anchor='middle'%3E日拱一卒 功不唐捐%3C/text%3E%3C/svg%3E"
+                        alt="反思与成长"
+                        title="反思 · 总结 · 成长"
+                    >
+                    <figcaption>▲ 反思不足，持续进步</figcaption>
+                </figure>
+            </section>
+
+            <!-- ====== 四、提升计划 ====== -->
+            <section id="plan">
+                <h2>四、提升计划</h2>
+                <p>
+                    针对本学期存在的问题，我制定了以下学习提升计划：
+                </p>
+                <ul>
+                    <li><strong>夯实基础</strong>——每日晨读背诵文科知识点，建立思维导图，形成系统化知识网络；</li>
+                    <li><strong>攻坚克难</strong>——每周整理 3–5 道理科典型难题，钻研解题思路，逐步克服畏难情绪；</li>
+                    <li><strong>优化时间</strong>——使用番茄工作法，合理分配学习与休息时间，杜绝拖延，提升学习效率。</li>
+                </ul>
+                <p>
+                    学习方法参考，可点击链接查看：
+                    <a href="https://www.cnblogs.com/" target="_blank" class="external-link" title="前往博客园查阅优质学习经验">
+                        <strong>优质学习经验分享</strong>
+                    </a>
+                </p>
+                <p>
+                    更多学习资源可访问：
+                    <a href="#nav-links" title="跳转到侧边栏快速链接">内部锚点：快速链接</a>
+                </p>
+            </section>
+
+        </main>
+
+        <!-- ========== aside：侧边栏 ========== -->
+        <aside>
+            <h3 id="nav-links">📌 快速导航</h3>
+            <ul>
+                <li><a href="#overview">📖 学期概况</a></li>
+                <li><a href="#scores">📊 成绩统计</a></li>
+                <li><a href="#reflection">📝 总结反思</a></li>
+                <li><a href="#plan">🚀 提升计划</a></li>
+                <li><a href="#footer-info">👤 个人信息</a></li>
+            </ul>
+
+            <div class="aside-quote">
+                "学而不思则罔，思而不学则殆。"<br>
+                —— 每日自省，持续进步。
+            </div>
+
+            <div class="aside-quote" style="background:#fef9e7;">
+                <strong>📅 本学期关键词</strong><br>
+                坚持 · 突破 · 成长
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- ==================== footer：页脚 ==================== -->
+    <footer id="footer-info">
+        <div class="footer-line">学生期末学习总结 | HTML5 网页实验作业 | 2026 学年</div>
+        <div class="footer-line">
+            <span class="highlight">班级：</span>XX级计算机科学与技术X班&nbsp;&nbsp;|&nbsp;&nbsp;
+            <span class="highlight">学号：</span>2024XXXXXXXX&nbsp;&nbsp;|&nbsp;&nbsp;
+            <span class="highlight">姓名：</span>XXX
+        </div>
+        <div class="footer-line" style="opacity:0.6;font-size:0.8rem;margin-top:6px;">
+            © 2026 学期学习总结 &mdash; 使用 HTML5 语义化标签构建
+        </div>
+    </footer>
+
+    <!-- ==================== 返回顶部 ==================== -->
+    <a href="#" id="back-to-top" title="返回顶部">↑</a>
+
+</body>
+</html>
